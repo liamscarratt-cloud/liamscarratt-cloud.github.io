@@ -6,6 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+I am a Chemistry educator and researcher with experience spanning surface chemistry, interdisciplinary collaboration, and science communication. My work includes designing and delivering innovative chemistry courses, mentoring students, and contributing to peer-reviewed publications and conference presentations. Since 2024, I have been focused on the integration of AI tools into chemistry education at UNSW College, with a commitment to fostering student success through evidence-based teaching practices.
 
 Academic Background
 ======
