@@ -8,5 +8,5 @@ redirect_from:
 ---
 
 <script>
-  window.location.replace("/files/Liam%20RJ%20Scarratt_CV%202026.pdf");
+  window.open("/files/Liam%20RJ%20Scarratt_CV%202026.pdf", "_blank");
 </script>
