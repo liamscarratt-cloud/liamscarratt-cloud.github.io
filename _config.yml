@@ -18,6 +18,10 @@ url                      : "https://liamscarratt-cloud.github.io/"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "liamscarratt-cloud/liamscarratt-cloud.github.io"
 
+atom_feed:
+  hide: true
+
+
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
@@ -46,8 +50,6 @@ author:
   scopus           : # URL
   zotero           : # URL
 
-atom_feed:
-  hide: true
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
