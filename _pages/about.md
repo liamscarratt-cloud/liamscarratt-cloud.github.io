@@ -11,7 +11,7 @@ Academic Background
 ======
 I completed my **PhD in Surface Chemistry** at the University of Sydney (2019), with four months at the Max Planck Institute for Polymer Research in Mainz, Germany. Prior to this, I earned a **Bachelor of Science** (Chemistry & Physics, Honours in Surface Chemistry) from the University of Sydney (2014), including a year in industry at [NICNAS](https://www.industrialchemicals.gov.au/) as a regulatory scientist.
 
-I held an Associate Postdoctoral position at the **University of Geneva, Switzerland** (2019–2021) and a Marie Skłodowska-Curie Postdoctoral Fellowship at the **University of Bristol, UK** (2021–2023) before returning to Sydney.
+I held an **Associate Postdoctoral** position at the University of Geneva, Switzerland (2019–2021) and a **Marie Skłodowska-Curie Postdoctoral Fellowship** at the University of Bristol, UK (2021–2023) before returning to Sydney.
 
 Since 2024, I have been at UNSW College as a **Chemistry Education Specialist**, where I lead the first-year university chemistry course as its lecturer, alongside teaching tutorials and demonstrating for laboratory classes.
 
