@@ -7,10 +7,4 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
-
-[Click here to view my CV](/files/Liam%20RJ%20Scarratt_CV%202026.pdf){:target="_blank"}
-
-<script>
-  window.location.replace("/files/Liam%20RJ%20Scarratt_CV%202026.pdf");
-</script>
+[Download / View my CV (PDF)](/files/Liam%20RJ%20Scarratt_CV%202026.pdf){:target="_blank" rel="noopener"}
