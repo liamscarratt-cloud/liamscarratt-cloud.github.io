@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Dimensional Analysis Lab | Chemistry Learning Tool</title>
+<meta content="Master dimensional analysis through interactive unit cancellation. Practice stoichiometry, thermochemistry, gas laws, and more." name="description"/>
+<script src="assets/script_af59dc4f.js"></script>
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          animation: {
+            'pulse-soft': 'pulse-soft 2s ease-in-out infinite',
+            'shake': 'shake 0.5s ease-in-out',
+            'pop': 'pop 0.3s ease-out',
+            'slide-up': 'slide-up 0.3s ease-out',
+          },
+          keyframes: {
+            'pulse-soft': {
+              '0%, 100%': { opacity: '1' },
+              '50%': { opacity: '0.7' },
+            },
+            'shake': {
+              '0%, 100%': { transform: 'translateX(0)' },
+              '20%, 60%': { transform: 'translateX(-5px)' },
+              '40%, 80%': { transform: 'translateX(5px)' },
+            },
+            'pop': {
+              '0%': { transform: 'scale(0.8)', opacity: '0' },
+              '100%': { transform: 'scale(1)', opacity: '1' },
+            },
+            'slide-up': {
+              '0%': { transform: 'translateY(10px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+          }
+        }
+      }
+    }
+  </script>
+<link href="assets/style_b114433e.css" rel="stylesheet"/>
+<style>
+    .chip-selected { ring: 2px solid rgb(16, 185, 129); transform: scale(1.05); }
+    .fraction-bar { background: linear-gradient(90deg, transparent, currentColor 10%, currentColor 90%, transparent); }
+    
+    [data-tooltip] { position: relative; }
+    [data-tooltip]:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0.5rem 0.75rem;
+      background: #1e293b;
+      color: white;
+      font-size: 0.75rem;
+      border-radius: 0.375rem;
+      white-space: nowrap;
+      z-index: 50;
+      margin-bottom: 0.5rem;
+    }
+    
+    .progress-ring { transform: rotate(-90deg); }
+    .progress-ring-circle { transition: stroke-dashoffset 0.5s ease; }
+    
+    @keyframes confetti-fall {
+      0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+    }
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      animation: confetti-fall 3s linear forwards;
+    }
+  </style>
+<script>
+                window.load_data_from_csv = (filename) => {
+                    // Implementation needed when code is downloaded
+                };
+
+                window.save_data_to_csv = (filename, data) => {
+                    // Implementation needed when code is downloaded
+                };
+
+                window.call_llm = (system_prompt, user_messages, json_fields) => {
+                    // Implementation needed when code is downloaded
+                };
+            </script></head>
+<body class="h-full bg-gradient-to-br from-slate-50 via-white to-emerald-50 dark:from-slate-950 dark:via-slate-900 dark:to-emerald-950 text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300">
+<div class="min-h-screen flex flex-col">
+<header class="sticky top-0 z-40 w-full border-b border-slate-200/80 dark:border-slate-800/80 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg">
+<div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="relative">
+<span class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-500/30">
+<i aria-hidden="true" class="fas fa-atom fa-lg"></i>
+</span>
+</div>
+<div class="flex flex-col">
+<h1 class="text-lg sm:text-xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400 bg-clip-text text-transparent">
+              Dimensional Analysis Lab
+            </h1>
+<p class="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">Master unit conversions through interactive practice</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+<i class="fas fa-trophy text-amber-500"></i>
+<span class="text-sm font-semibold" id="scoreDisplay">0</span>
+<span class="text-xs text-slate-500">pts</span>
+</div>
+<div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 dark:bg-orange-900/30 border border-orange-200 dark:border-orange-800">
+<i class="fas fa-fire text-orange-500"></i>
+<span class="text-sm font-semibold text-orange-700 dark:text-orange-300" id="streakDisplay">0</span>
+</div>
+<button aria-label="Settings" class="p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all" data-tooltip="Settings" id="settingsBtn">
+<i class="fas fa-cog text-slate-600 dark:text-slate-300"></i>
+</button>
+<button aria-label="Toggle dark mode" aria-pressed="false" class="p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all" data-tooltip="Toggle theme" id="darkToggle">
+<i class="fas fa-moon dark:hidden text-slate-600"></i>
+<i class="fas fa-sun hidden dark:block text-amber-400"></i>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 pb-8">
+<div class="max-w-6xl mx-auto px-4 py-4 space-y-4">
+<details class="group rounded-xl border border-emerald-200 dark:border-emerald-800 bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 overflow-hidden" id="tutorialPanel">
+<summary class="px-4 py-3 cursor-pointer list-none flex items-center justify-between hover:bg-emerald-100/50 dark:hover:bg-emerald-800/20 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-800 flex items-center justify-center">
+<i class="fas fa-graduation-cap text-emerald-600 dark:text-emerald-400"></i>
+</div>
+<span class="font-semibold text-emerald-800 dark:text-emerald-200">How to Play</span>
+<span class="text-xs px-2 py-0.5 rounded-full bg-emerald-200 dark:bg-emerald-700 text-emerald-700 dark:text-emerald-200" id="tutorialBadge">New? Start here!</span>
+</div>
+<i class="fas fa-chevron-down text-emerald-600 dark:text-emerald-400 transition-transform group-open:rotate-180"></i>
+</summary>
+<div class="px-4 pb-4 pt-2">
+<div class="grid sm:grid-cols-3 gap-4">
+<div class="flex gap-3 p-3 rounded-lg bg-white/60 dark:bg-slate-800/40">
+<div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center flex-shrink-0">
+<span class="text-blue-600 dark:text-blue-400 font-bold">1</span>
+</div>
+<div>
+<p class="font-medium text-sm">Identify the Target</p>
+<p class="text-xs text-slate-600 dark:text-slate-400">Find the variable marked with <i class="fas fa-star text-amber-500"></i> — that's what you're solving for.</p>
+</div>
+</div>
+<div class="flex gap-3 p-3 rounded-lg bg-white/60 dark:bg-slate-800/40">
+<div class="w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center flex-shrink-0">
+<span class="text-purple-600 dark:text-purple-400 font-bold">2</span>
+</div>
+<div>
+<p class="font-medium text-sm">Cancel Matching Units</p>
+<p class="text-xs text-slate-600 dark:text-slate-400">Click two units with the same label — one from top, one from bottom.</p>
+</div>
+</div>
+<div class="flex gap-3 p-3 rounded-lg bg-white/60 dark:bg-slate-800/40">
+<div class="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center flex-shrink-0">
+<span class="text-emerald-600 dark:text-emerald-400 font-bold">3</span>
+</div>
+<div>
+<p class="font-medium text-sm">Complete the Problem</p>
+<p class="text-xs text-slate-600 dark:text-slate-400">Cancel all pairs until only the target unit remains!</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+<div class="lg:col-span-3 space-y-4">
+<div class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
+<div class="px-4 py-3 bg-gradient-to-r from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-800/50 border-b border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2">
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Problem</span>
+<span class="px-2 py-0.5 rounded-md bg-slate-200 dark:bg-slate-700 text-sm font-mono font-bold" id="problemNumber">1/10</span>
+</div>
+<div class="h-4 w-px bg-slate-300 dark:bg-slate-600"></div>
+<h2 class="font-semibold text-slate-800 dark:text-slate-200" id="problemTitle">Loading...</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs text-slate-500">Difficulty:</span>
+<div class="flex gap-0.5" id="difficultyStars">
+<i class="fas fa-star text-amber-400 text-xs"></i>
+<i class="fas fa-star text-amber-400 text-xs"></i>
+<i class="fas fa-star text-slate-300 dark:text-slate-600 text-xs"></i>
+</div>
+</div>
+</div>
+<div class="p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-wrap items-start gap-4">
+<div class="flex-shrink-0">
+<div class="text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">Formula</div>
+<div class="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 border border-indigo-200 dark:border-indigo-800">
+<span class="font-mono text-lg font-semibold text-indigo-700 dark:text-indigo-300" id="formulaDisplay">PV = nRT</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">Variables</div>
+<div class="flex flex-wrap gap-2" id="variablesArea">
+<div class="text-sm text-slate-500">Loading...</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4">
+<div class="text-xs font-medium text-slate-500 dark:text-slate-400 mb-2 flex items-center gap-2">
+<i class="fas fa-calculator"></i>
+<span>Calculation Setup</span>
+<span class="text-slate-400 dark:text-slate-500">— Click units to select, then cancel matching pairs</span>
+</div>
+<div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 min-h-[120px] overflow-x-auto" id="equationArea">
+<div class="text-sm text-slate-500 flex items-center justify-center h-full">
+<i class="fas fa-spinner fa-spin mr-2"></i> Loading calculation...
+                  </div>
+</div>
+</div>
+</div>
+<div aria-label="Unit cancellation zone" class="rounded-xl border-2 border-dashed transition-all duration-300 border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/30" id="dropZone" role="region" tabindex="0">
+<div class="p-4">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-emerald-100 dark:bg-emerald-800 flex items-center justify-center">
+<i class="fas fa-scissors text-emerald-600 dark:text-emerald-400"></i>
+</div>
+<div>
+<h3 class="font-semibold text-slate-800 dark:text-slate-200">Cancel Units</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Select 2 matching units (one numerator, one denominator)</p>
+</div>
+</div>
+<button aria-label="Clear selection" class="text-xs px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors flex items-center gap-1.5" id="clearZoneBtn">
+<i class="fas fa-times"></i>
+<span>Clear</span>
+</button>
+</div>
+<div class="flex flex-wrap items-center gap-3 min-h-[3rem] p-3 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700" id="zoneUnits">
+<span class="text-sm text-slate-400 dark:text-slate-500 italic" id="zonePlaceholder">
+<i class="fas fa-hand-pointer mr-1"></i> Selected units will appear here...
+                  </span>
+</div>
+</div>
+</div>
+</div>
+<aside class="space-y-4">
+<div class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
+<div class="px-4 py-3 bg-gradient-to-r from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-800/50 border-b border-slate-200 dark:border-slate-700">
+<h3 class="font-semibold flex items-center gap-2">
+<i class="fas fa-chart-pie text-emerald-600"></i>
+                  Progress
+                </h3>
+</div>
+<div class="p-4">
+<div class="flex items-center justify-center mb-3">
+<div class="relative">
+<svg class="progress-ring w-24 h-24" viewbox="0 0 100 100">
+<circle class="text-slate-200 dark:text-slate-700" cx="50" cy="50" fill="transparent" r="42" stroke="currentColor" stroke-width="8"></circle>
+<circle class="progress-ring-circle text-emerald-500" cx="50" cy="50" fill="transparent" id="progressRing" r="42" stroke="currentColor" stroke-dasharray="264" stroke-dashoffset="264" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-2xl font-bold" id="progressPercent">0%</span>
+<span class="text-xs text-slate-500">complete</span>
+</div>
+</div>
+</div>
+<div class="text-center text-sm">
+<span class="text-slate-600 dark:text-slate-400">Pairs canceled: </span>
+<span class="font-semibold" id="pairsProgress">0 / 0</span>
+</div>
+</div>
+</div>
+<div class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
+<div class="px-4 py-3 bg-gradient-to-r from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-800/50 border-b border-slate-200 dark:border-slate-700">
+<h3 class="font-semibold flex items-center gap-2">
+<i class="fas fa-gamepad text-emerald-600"></i>
+                  Controls
+                </h3>
+</div>
+<div class="p-4 space-y-2">
+<button class="w-full px-4 py-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition-all flex items-center justify-center gap-2 group" id="resetBtn">
+<i class="fas fa-rotate-left group-hover:-rotate-180 transition-transform duration-300"></i>
+<span>Reset Problem</span>
+<kbd class="ml-auto text-xs px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-700 text-slate-500">R</kbd>
+</button>
+<button class="w-full px-4 py-2.5 rounded-lg bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-md shadow-emerald-500/20 transition-all flex items-center justify-center gap-2 group" id="nextBtn">
+<span>Next Problem</span>
+<i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+<kbd class="ml-auto text-xs px-1.5 py-0.5 rounded bg-emerald-600 text-emerald-200">N</kbd>
+</button>
+</div>
+</div>
+<div class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
+<div class="px-4 py-3 bg-gradient-to-r from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-800/50 border-b border-slate-200 dark:border-slate-700 flex items-center gap-2">
+<i class="fas fa-comment-dots text-slate-500" id="statusIcon"></i>
+<h3 class="font-semibold">Status</h3>
+</div>
+<div class="p-4">
+<div aria-live="polite" class="text-sm p-3 rounded-lg bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 transition-all" id="feedback" role="status">
+                  Ready. Select matching units to cancel.
+                </div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<dialog class="rounded-xl shadow-2xl backdrop:bg-slate-900/50 p-0 w-full max-w-md" id="settingsModal">
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
+<div class="px-4 py-3 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between">
+<h3 class="font-semibold flex items-center gap-2">
+<i class="fas fa-cog text-slate-500"></i>
+            Settings
+          </h3>
+<button class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" id="closeSettingsBtn">
+<i class="fas fa-times"></i>
+</button>
+</div>
+<div class="p-4 space-y-4">
+<div>
+<label class="flex items-center justify-between">
+<span class="text-sm font-medium">Sound Effects</span>
+<input checked="" class="w-5 h-5 rounded accent-emerald-500" id="soundToggle" type="checkbox"/>
+</label>
+</div>
+<div>
+<label class="flex items-center justify-between">
+<span class="text-sm font-medium">Animations</span>
+<input checked="" class="w-5 h-5 rounded accent-emerald-500" id="animToggle" type="checkbox"/>
+</label>
+</div>
+<div>
+<label class="flex items-center justify-between">
+<span class="text-sm font-medium">Show Tutorial on Load</span>
+<input checked="" class="w-5 h-5 rounded accent-emerald-500" id="tutorialToggle" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+</dialog>
+<footer class="border-t border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 backdrop-blur">
+<div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500 dark:text-slate-400">
+<span>Dimensional Analysis Lab — Interactive Chemistry Learning</span>
+<div class="flex items-center gap-3">
+<span>Keyboard: <kbd class="px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-700">R</kbd> Reset <kbd class="px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-700 ml-1">N</kbd> Next</span>
+</div>
+</div>
+</footer>
+</div>
+<script>
+    const state = {
+      problems: [],
+      currentIndex: 0,
+      canceledPairs: [],
+      selectedUnits: [],
+      unitMap: new Map(),
+      completed: false,
+      score: 0,
+      streak: 0,
+      maxStreak: 0,
+      settings: {
+        sound: true,
+        animations: true,
+        showTutorial: true
+      }
+    };
+
+    const AudioManager = {
+      ctx: null,
+      init() {
+        if (!this.ctx) this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+      },
+      play(type) {
+        if (!state.settings.sound) return;
+        this.init();
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        
+        if (type === 'success') {
+          osc.frequency.setValueAtTime(523.25, this.ctx.currentTime);
+          osc.frequency.setValueAtTime(659.25, this.ctx.currentTime + 0.1);
+          gain.gain.setValueAtTime(0.3, this.ctx.currentTime);
+          osc.start();
+          osc.stop(this.ctx.currentTime + 0.3);
+        } else if (type === 'error') {
+          osc.frequency.setValueAtTime(200, this.ctx.currentTime);
+          gain.gain.setValueAtTime(0.2, this.ctx.currentTime);
+          osc.start();
+          osc.stop(this.ctx.currentTime + 0.15);
+        } else if (type === 'complete') {
+          [523.25, 659.25, 783.99, 1046.50].forEach((freq, i) => {
+            const o = this.ctx.createOscillator();
+            const g = this.ctx.createGain();
+            o.connect(g);
+            g.connect(this.ctx.destination);
+            o.frequency.value = freq;
+            g.gain.setValueAtTime(0.2, this.ctx.currentTime + i * 0.1);
+            o.start(this.ctx.currentTime + i * 0.1);
+            o.stop(this.ctx.currentTime + i * 0.1 + 0.2);
+          });
+        }
+      }
+    };
+
+    function setFeedback(message, tone = "info") {
+      const feedback = document.getElementById("feedback");
+      const statusIcon = document.getElementById("statusIcon");
+      
+      const tones = {
+        success: {
+          classes: "bg-emerald-50 dark:bg-emerald-900/40 border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-200",
+          icon: "fa-circle-check text-emerald-500"
+        },
+        error: {
+          classes: "bg-rose-50 dark:bg-rose-900/40 border-rose-200 dark:border-rose-800 text-rose-800 dark:text-rose-200",
+          icon: "fa-triangle-exclamation text-rose-500"
+        },
+        info: {
+          classes: "bg-slate-50 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300",
+          icon: "fa-comment-dots text-slate-400"
+        }
+      };
+      
+      const t = tones[tone] || tones.info;
+      feedback.className = `text-sm p-3 rounded-lg border transition-all ${t.classes}`;
+      statusIcon.className = `fas ${t.icon}`;
+      feedback.innerHTML = message;
+    }
+
+    function updateProgress() {
+      const allUnits = Array.from(state.unitMap.values());
+      const totalTargets = computeTargetPairs(allUnits);
+      const done = state.canceledPairs.length;
+      const percent = totalTargets > 0 ? Math.round((done / totalTargets) * 100) : 0;
+      
+      const ring = document.getElementById("progressRing");
+      const circumference = 264;
+      const offset = circumference - (percent / 100) * circumference;
+      ring.style.strokeDashoffset = offset;
+      
+      document.getElementById("progressPercent").textContent = `${percent}%`;
+      document.getElementById("pairsProgress").textContent = `${done} / ${totalTargets}`;
+      
+      if (done === totalTargets && totalTargets > 0 && !state.completed) {
+        state.completed = true;
+        state.score += 100 + (state.streak * 10);
+        state.streak++;
+        state.maxStreak = Math.max(state.maxStreak, state.streak);
+        
+        updateScoreDisplay();
+        setFeedback(`<i class="fas fa-trophy text-amber-500 mr-1"></i> Excellent! Problem complete! +${100 + (state.streak - 1) * 10} points`, "success");
+        AudioManager.play('complete');
+        
+        if (state.settings.animations) spawnConfetti();
+      }
+    }
+
+    function updateScoreDisplay() {
+      document.getElementById("scoreDisplay").textContent = state.score;
+      document.getElementById("streakDisplay").textContent = state.streak;
+    }
+
+    function computeTargetPairs(units) {
+      const byLabel = {};
+      units.forEach(u => {
+        if (!byLabel[u.label]) byLabel[u.label] = { numerator: 0, denominator: 0 };
+        byLabel[u.label][u.side]++;
+      });
+      return Object.values(byLabel).reduce((total, counts) => total + Math.min(counts.numerator, counts.denominator), 0);
+    }
+
+    function spawnConfetti() {
+      const colors = ['#10b981', '#f59e0b', '#3b82f6', '#ec4899', '#8b5cf6'];
+      for (let i = 0; i < 50; i++) {
+        const conf = document.createElement('div');
+        conf.className = 'confetti';
+        conf.style.left = Math.random() * 100 + 'vw';
+        conf.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        conf.style.animationDelay = Math.random() * 0.5 + 's';
+        conf.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+        document.body.appendChild(conf);
+        setTimeout(() => conf.remove(), 3500);
+      }
+    }
+
+    function renderVariables(problem) {
+      const area = document.getElementById("variablesArea");
+      const formulaDisplay = document.getElementById("formulaDisplay");
+      area.innerHTML = "";
+      formulaDisplay.textContent = problem.formula || "";
+
+      if (!problem.vars || problem.vars.length === 0) {
+        area.innerHTML = `<span class="text-sm text-slate-500 italic">Direct unit conversion</span>`;
+        return;
+      }
+
+      problem.vars.forEach(v => {
+        const chip = document.createElement("div");
+        const isTarget = problem.targetVariable && v.symbol === problem.targetVariable.symbol;
+        chip.className = `inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs transition-all ${
+          isTarget 
+            ? 'bg-amber-100 dark:bg-amber-900/40 border border-amber-300 dark:border-amber-700 text-amber-800 dark:text-amber-200' 
+            : 'bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700'
+        }`;
+        
+        chip.innerHTML = `
+          <span class="font-mono font-bold">${v.symbol}</span>
+          <span class="text-slate-500 dark:text-slate-400">=</span>
+          <span class="truncate max-w-[120px]" title="${v.meaning}">${v.meaning}</span>
+          ${isTarget ? '<i class="fas fa-star text-amber-500 ml-1"></i>' : ''}
+        `;
+        area.appendChild(chip);
+      });
+    }
+
+    function renderChip(unit, inZone = false) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.dataset.unitId = unit.id;
+      btn.dataset.side = unit.side;
+      
+      const sideColors = unit.side === 'numerator' 
+        ? 'bg-blue-50 dark:bg-blue-900/30 border-blue-300 dark:border-blue-700 text-blue-700 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-800/50'
+        : 'bg-purple-50 dark:bg-purple-900/30 border-purple-300 dark:border-purple-700 text-purple-700 dark:text-purple-300 hover:bg-purple-100 dark:hover:bg-purple-800/50';
+      
+      btn.className = `inline-flex items-center gap-1.5 h-8 px-3 rounded-full border text-sm font-medium transition-all duration-150 cursor-pointer select-none ${sideColors}`;
+      
+      const sideIcon = unit.side === 'numerator' ? '↑' : '↓';
+      btn.innerHTML = `<span class="opacity-50 text-xs">${sideIcon}</span> ${unit.label}`;
+      btn.setAttribute("aria-label", `${unit.label} (${unit.side})`);
+
+      if (!inZone) {
+        btn.addEventListener("click", () => selectUnit(unit.id));
+      } else {
+        btn.addEventListener("click", () => deselectUnit(unit.id));
+      }
+      
+      return btn;
+    }
+
+    function renderFractionBlock(numeratorTokens, denominatorTokens) {
+      const block = document.createElement("div");
+      block.className = "inline-flex flex-col items-stretch justify-center px-1";
+      
+      const numRow = document.createElement("div");
+      numRow.className = "min-h-[2.5rem] flex flex-wrap items-center justify-center gap-1.5 px-2";
+      
+      if (numeratorTokens.length === 0) {
+        const spacer = document.createElement("span");
+        spacer.className = "text-slate-400 text-sm";
+        spacer.textContent = "1";
+        numRow.append(spacer);
+      } else {
+        numeratorTokens.forEach(tok => {
+          if (tok.type === "text") {
+            const span = document.createElement("span");
+            span.className = "text-slate-700 dark:text-slate-300 font-medium text-sm";
+            span.textContent = tok.v;
+            numRow.append(span);
+          } else {
+            const unit = state.unitMap.get(tok.id);
+            if (unit && !unit.canceled) {
+              const chip = renderChip(unit);
+              chip.id = `chip-${tok.id}`;
+              numRow.append(chip);
+            } else if (unit && unit.canceled) {
+              const canceled = document.createElement("span");
+              canceled.className = "inline-flex items-center h-8 px-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 line-through text-sm";
+              canceled.textContent = unit.label;
+              canceled.id = `chip-${tok.id}`;
+              numRow.append(canceled);
+            }
+          }
+        });
+      }
+      
+      const bar = document.createElement("div");
+      bar.className = "h-0.5 w-full bg-slate-400 dark:bg-slate-500 my-1 rounded-full fraction-bar";
+      
+      const denRow = document.createElement("div");
+      denRow.className = "min-h-[2.5rem] flex flex-wrap items-center justify-center gap-1.5 px-2";
+      
+      if (denominatorTokens.length === 0) {
+        const spacer = document.createElement("span");
+        spacer.className = "text-slate-400 text-sm";
+        spacer.textContent = "1";
+        denRow.append(spacer);
+      } else {
+        denominatorTokens.forEach(tok => {
+          if (tok.type === "text") {
+            const span = document.createElement("span");
+            span.className = "text-slate-700 dark:text-slate-300 font-medium text-sm";
+            span.textContent = tok.v;
+            denRow.append(span);
+          } else {
+            const unit = state.unitMap.get(tok.id);
+            if (unit && !unit.canceled) {
+              const chip = renderChip(unit);
+              chip.id = `chip-${tok.id}`;
+              denRow.append(chip);
+            } else if (unit && unit.canceled) {
+              const canceled = document.createElement("span");
+              canceled.className = "inline-flex items-center h-8 px-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 line-through text-sm";
+              canceled.textContent = unit.label;
+              canceled.id = `chip-${tok.id}`;
+              denRow.append(canceled);
+            }
+          }
+        });
+      }
+      
+      block.append(numRow, bar, denRow);
+      return block;
+    }
+
+    function renderEquation(problem) {
+      const eq = document.getElementById("equationArea");
+      eq.innerHTML = "";
+      
+      const row = document.createElement("div");
+      row.className = "flex items-center justify-start gap-2 flex-wrap";
+      
+      problem.blocks.forEach((blk, i) => {
+        row.append(renderFractionBlock(blk.numerator, blk.denominator));
+        if (i < problem.blocks.length - 1) {
+          const sep = document.createElement("span");
+          sep.className = "text-xl text-slate-400 dark:text-slate-500 px-1 select-none";
+          sep.textContent = "×";
+          row.append(sep);
+        }
+      });
+      
+      eq.append(row);
+    }
+
+    function selectUnit(unitId) {
+      if (state.completed) return;
+      
+      const unit = state.unitMap.get(unitId);
+      if (!unit || unit.canceled) return;
+      
+      if (state.selectedUnits.includes(unitId)) {
+        deselectUnit(unitId);
+        return;
+      }
+      
+      if (state.selectedUnits.length >= 2) return;
+      
+      state.selectedUnits.push(unitId);
+      updateZoneDisplay();
+      highlightSelectedChip(unitId, true);
+      
+      if (state.selectedUnits.length === 2) {
+        setTimeout(attemptCancellation, 300);
+      }
+    }
+
+    function deselectUnit(unitId) {
+      state.selectedUnits = state.selectedUnits.filter(id => id !== unitId);
+      updateZoneDisplay();
+      highlightSelectedChip(unitId, false);
+    }
+
+    function highlightSelectedChip(unitId, selected) {
+      const chip = document.getElementById(`chip-${unitId}`);
+      if (!chip) return;
+      
+      if (selected) {
+        chip.classList.add('ring-2', 'ring-emerald-500', 'ring-offset-2', 'scale-105');
+      } else {
+        chip.classList.remove('ring-2', 'ring-emerald-500', 'ring-offset-2', 'scale-105');
+      }
+    }
+
+    function updateZoneDisplay() {
+      const zone = document.getElementById("zoneUnits");
+      zone.innerHTML = "";
+      
+      if (state.selectedUnits.length === 0) {
+        const p = document.createElement("span");
+        p.id = "zonePlaceholder";
+        p.className = "text-sm text-slate-400 dark:text-slate-500 italic";
+        p.innerHTML = '<i class="fas fa-hand-pointer mr-1"></i> Selected units will appear here...';
+        zone.append(p);
+        return;
+      }
+      
+      state.selectedUnits.forEach(unitId => {
+        const unit = state.unitMap.get(unitId);
+        if (unit) {
+          const chip = renderChip(unit, true);
+          chip.classList.add('animate-pop');
+          zone.append(chip);
+        }
+      });
+      
+      if (state.selectedUnits.length === 1) {
+        const hint = document.createElement("span");
+        hint.className = "text-xs text-slate-400 italic ml-2";
+        hint.textContent = "Select one more unit to cancel...";
+        zone.append(hint);
+      }
+    }
+
+    function attemptCancellation() {
+      if (state.selectedUnits.length !== 2) return;
+      
+      const [aId, bId] = state.selectedUnits;
+      const a = state.unitMap.get(aId);
+      const b = state.unitMap.get(bId);
+      
+      if (a.label === b.label && a.side !== b.side) {
+        a.canceled = b.canceled = true;
+        state.canceledPairs.push({ aId, bId });
+        
+        AudioManager.play('success');
+        setFeedback(`<i class="fas fa-check-circle text-emerald-500 mr-1"></i> Correct! <strong>${a.label}</strong> units cancel out.`, "success");
+        
+        renderEquation(state.problems[state.currentIndex]);
+        updateProgress();
+      } else {
+        state.streak = 0;
+        updateScoreDisplay();
+        AudioManager.play('error');
+        
+        let errorMsg = '';
+        if (a.label !== b.label) {
+          errorMsg = `<strong>${a.label}</strong> and <strong>${b.label}</strong> don't match. Units must be identical to cancel.`;
+        } else {
+          errorMsg = `Both units are in the ${a.side}. You need one from the numerator and one from the denominator.`;
+        }
+        
+        setFeedback(`<i class="fas fa-times-circle text-rose-500 mr-1"></i> ${errorMsg}`, "error");
+        
+        const dz = document.getElementById("dropZone");
+        dz.classList.add('animate-shake');
+        setTimeout(() => dz.classList.remove('animate-shake'), 500);
+        
+        highlightSelectedChip(aId, false);
+        highlightSelectedChip(bId, false);
+      }
+      
+      state.selectedUnits = [];
+      updateZoneDisplay();
+    }
+
+    function clearSelection() {
+      state.selectedUnits.forEach(id => highlightSelectedChip(id, false));
+      state.selectedUnits = [];
+      updateZoneDisplay();
+    }
+
+    function loadProblem(problem) {
+      if (!problem) return;
+      
+      state.canceledPairs = [];
+      state.selectedUnits = [];
+      state.completed = false;
+      state.unitMap.clear();
+      
+      problem.units.forEach(u => state.unitMap.set(u.id, { ...u, canceled: false }));
+      
+      document.getElementById("problemTitle").textContent = problem.title;
+      document.getElementById("problemNumber").textContent = `${state.currentIndex + 1}/${state.problems.length}`;
+      
+      const pairs = computeTargetPairs(problem.units);
+      const difficulty = pairs <= 2 ? 1 : pairs <= 4 ? 2 : 3;
+      const stars = document.getElementById("difficultyStars");
+      stars.innerHTML = Array(3).fill(0).map((_, i) => 
+        `<i class="fas fa-star text-xs ${i < difficulty ? 'text-amber-400' : 'text-slate-300 dark:text-slate-600'}"></i>`
+      ).join('');
+      
+      renderVariables(problem);
+      renderEquation(problem);
+      updateZoneDisplay();
+      updateProgress();
+      
+      setFeedback("Ready! Click on matching units to cancel them.", "info");
+    }
+
+    function loadSettings() {
+      const saved = localStorage.getItem('dimAnalysisSettings');
+      if (saved) {
+        Object.assign(state.settings, JSON.parse(saved));
+      }
+      
+      document.getElementById('soundToggle').checked = state.settings.sound;
+      document.getElementById('animToggle').checked = state.settings.animations;
+      document.getElementById('tutorialToggle').checked = state.settings.showTutorial;
+      
+      if (!state.settings.showTutorial) {
+        document.getElementById('tutorialPanel').removeAttribute('open');
+      }
+    }
+
+    function saveSettings() {
+      localStorage.setItem('dimAnalysisSettings', JSON.stringify(state.settings));
+    }
+
+    function buildProblems() {
+      return [
+        { id: "ideal_gas_find_moles", title: "Ideal Gas: Solve for n (moles)", formula: "n = PV / RT", targetVariable: { symbol: 'n' }, vars: [ { symbol: "P", meaning: "1.00 atm" }, { symbol: "V", meaning: "2.50 L" }, { symbol: "n", meaning: "? moles" }, { symbol: "R", meaning: "0.08206 L·atm/mol·K" }, { symbol: "T", meaning: "298 K" } ], blocks: [ { numerator: [{ type: "text", v: "1.00" }, { type: "chip", id: "atm#1" }], denominator: [] }, { numerator: [{ type: "text", v: "2.50" }, { type: "chip", id: "L#1" }], denominator: [] }, { numerator: [{ type: "chip", id: "mol#1" }, { type: "chip", id: "K#1" }], denominator: [{ type: "text", v: "0.08206" }, { type: "chip", id: "L#2" }, { type: "chip", id: "atm#2" }] }, { numerator: [], denominator: [{ type: "text", v: "298" }, { type: "chip", id: "K#2" }] } ], units: [ { id: "atm#1", label: "atm", side: "numerator" }, { id: "L#1", label: "L", side: "numerator" }, { id: "mol#1", label: "mol", side: "numerator" }, { id: "K#1", label: "K", side: "numerator" }, { id: "L#2", label: "L", side: "denominator" }, { id: "atm#2", label: "atm", side: "denominator" }, { id: "K#2", label: "K", side: "denominator" } ] },
+        { id: "ideal_gas_find_pressure", title: "Ideal Gas: Solve for P (Pressure)", formula: "P = nRT / V", targetVariable: { symbol: 'P' }, vars: [ { symbol: "P", meaning: "? atm" }, { symbol: "n", meaning: "0.5 mol" }, { symbol: "R", meaning: "0.08206 L·atm/mol·K" }, { symbol: "T", meaning: "300 K" }, { symbol: "V", meaning: "5.0 L" } ], blocks: [ { numerator: [{ type: "text", v: "0.5" }, { type: "chip", id: "mol#1" }], denominator: [] }, { numerator: [{ type: "text", v: "0.08206" }, { type: "chip", id: "L#1" }, { type: "chip", id: "atm#1" }], denominator: [{ type: "chip", id: "mol#2" }, { type: "chip", id: "K#1" }] }, { numerator: [{ type: "text", v: "300" }, { type: "chip", id: "K#2" }], denominator: [] }, { numerator: [], denominator: [{ type: "text", v: "5.0" }, { type: "chip", id: "L#2" }] } ], units: [ { id: "mol#1", label: "mol", side: "numerator" }, { id: "L#1", label: "L", side: "numerator" }, { id: "atm#1", label: "atm", side: "numerator" }, { id: "mol#2", label: "mol", side: "denominator" }, { id: "K#1", label: "K", side: "denominator" }, { id: "K#2", label: "K", side: "numerator" }, { id: "L#2", label: "L", side: "denominator" } ] },
+        { id: "thermochemistry_specific_heat", title: "Specific Heat: Solve for q (Heat)", formula: "q = mcΔT", targetVariable: { symbol: 'q' }, vars: [ { symbol: "q", meaning: "? J" }, { symbol: "m", meaning: "150.0 g" }, { symbol: "c", meaning: "4.184 J/g·°C" }, { symbol: "ΔT", meaning: "10.0 °C" } ], blocks: [ { numerator: [{ type: "text", v: "150.0" }, { type: "chip", id: "g#1" }], denominator: [] }, { numerator: [{ type: "text", v: "4.184" }, { type: "chip", id: "J#1" }], denominator: [{ type: "chip", id: "g#2" }, { type: "chip", id: "°C#1" }] }, { numerator: [{ type: "text", v: "10.0" }, { type: "chip", id: "°C#2" }], denominator: [] } ], units: [ { id: "g#1", label: "g", side: "numerator" }, { id: "g#2", label: "g", side: "denominator" }, { id: "J#1", label: "J", side: "numerator" }, { id: "°C#1", label: "°C", side: "denominator" }, { id: "°C#2", label: "°C", side: "numerator" } ] },
+        { id: "thermochemistry_find_mass", title: "Specific Heat: Solve for m (mass)", formula: "m = q / (cΔT)", targetVariable: { symbol: 'm' }, vars: [ { symbol: "q", meaning: "5000 J" }, { symbol: "m", meaning: "? g" }, { symbol: "c", meaning: "4.184 J/g·°C" }, { symbol: "ΔT", meaning: "20.0 °C" } ], blocks: [ { numerator: [{ type: "text", v: "5000" }, { type: "chip", id: "J#1" }], denominator: [] }, { numerator: [{ type: "chip", id: "g#1" }, { type: "chip", id: "°C#1" }], denominator: [{ type: "text", v: "4.184" }, { type: "chip", id: "J#2" }] }, { numerator: [], denominator: [{ type: "text", v: "20.0" }, { type: "chip", id: "°C#2" }] } ], units: [ { id: "J#1", label: "J", side: "numerator" }, { id: "g#1", label: "g", side: "numerator" }, { id: "°C#1", label: "°C", side: "numerator" }, { id: "J#2", label: "J", side: "denominator" }, { id: "°C#2", label: "°C", side: "denominator" } ] },
+        { id: "photon_energy_frequency", title: "Photon Energy: E = hν", formula: "E = hν", targetVariable: { symbol: 'E' }, vars: [ { symbol: "E", meaning: "? J" }, { symbol: "h", meaning: "6.626×10⁻³⁴ J·s" }, { symbol: "ν", meaning: "4.50×10¹⁴ s⁻¹" } ], blocks: [ { numerator: [{ type: "text", v: "6.626e-34" }, { type: "chip", id: "J#1" }, { type: "chip", id: "s#1" }], denominator: [] }, { numerator: [{ type: "text", v: "4.50e14" }], denominator: [{ type: "chip", id: "s#2" }] } ], units: [ { id: "J#1", label: "J", side: "numerator" }, { id: "s#1", label: "s", side: "numerator" }, { id: "s#2", label: "s", side: "denominator" } ] },
+        { id: "moles_to_particles", title: "Avogadro: Moles to Molecules", formula: "N = n × Nₐ", targetVariable: { symbol: 'N' }, vars: [ { symbol: "N", meaning: "? molecules" }, { symbol: "n", meaning: "2.5 mol" }, { symbol: "Nₐ", meaning: "6.022×10²³ molecules/mol" } ], blocks: [ { numerator: [{ type: "text", v: "2.5" }, { type: "chip", id: "mol#1" }], denominator: [] }, { numerator: [{ type: "text", v: "6.022e23" }, { type: "chip", id: "molecules#1" }], denominator: [{ type: "chip", id: "mol#2" }] } ], units: [ { id: "mol#1", label: "mol", side: "numerator" }, { id: "molecules#1", label: "molecules", side: "numerator" }, { id: "mol#2", label: "mol", side: "denominator" } ] },
+        { id: "electrochemistry_mass", title: "Electrolysis: Mass of Cu deposited", formula: "m = (I·t·M) / (n·F)", targetVariable: { symbol: 'm' }, vars: [ { symbol: "m", meaning: "? g" }, { symbol: "I", meaning: "10.0 A (C/s)" }, { symbol: "t", meaning: "965 s" }, { symbol: "M", meaning: "63.55 g/mol" }, { symbol: "n", meaning: "2 mol e⁻" }, { symbol: "F", meaning: "96485 C/mol e⁻" } ], blocks: [ { numerator: [{ type: "text", v: "10.0" }, { type: "chip", id: "C#1" }], denominator: [{ type: "chip", id: "s#1" }] }, { numerator: [{ type: "text", v: "965" }, { type: "chip", id: "s#2" }], denominator: [] }, { numerator: [{ type: "text", v: "63.55" }, { type: "chip", id: "g#1" }], denominator: [{ type: "chip", id: "mol#1" }] }, { numerator: [{ type: "chip", id: "mol e⁻#1" }], denominator: [{ type: "text", v: "96485" }, { type: "chip", id: "C#2" }] }, { numerator: [], denominator: [{ type: "text", v: "2" }, { type: "chip", id: "mol e⁻#2" }] } ], units: [ { id: "C#1", label: "C", side: "numerator" }, { id: "s#1", label: "s", side: "denominator" }, { id: "s#2", label: "s", side: "numerator" }, { id: "g#1", label: "g", side: "numerator" }, { id: "mol#1", label: "mol", side: "denominator" }, { id: "mol e⁻#1", label: "mol e⁻", side: "numerator" }, { id: "C#2", label: "C", side: "denominator" }, { id: "mol e⁻#2", label: "mol e⁻", side: "denominator" } ] },
+        { id: "de_broglie_wavelength", title: "de Broglie: Electron Wavelength", formula: "λ = h / mv", targetVariable: { symbol: 'λ' }, vars: [ { symbol: "λ", meaning: "? m" }, { symbol: "h", meaning: "6.626×10⁻³⁴ kg·m²/s" }, { symbol: "m", meaning: "9.11×10⁻³¹ kg" }, { symbol: "v", meaning: "2.00×10⁶ m/s" } ], blocks: [ { numerator: [{ type: "text", v: "6.626e-34" }, { type: "chip", id: "kg#1" }, { type: "chip", id: "m²#1" }], denominator: [{ type: "chip", id: "s#1" }] }, { numerator: [], denominator: [{ type: "text", v: "9.11e-31" }, { type: "chip", id: "kg#2" }] }, { numerator: [{ type: "chip", id: "s#2" }], denominator: [{ type: "text", v: "2.00e6" }, { type: "chip", id: "m#1" }] } ], units: [ { id: "kg#1", label: "kg", side: "numerator" }, { id: "m²#1", label: "m²", side: "numerator" }, { id: "s#1", label: "s", side: "denominator" }, { id: "kg#2", label: "kg", side: "denominator" }, { id: "s#2", label: "s", side: "numerator" }, { id: "m#1", label: "m", side: "denominator" } ] },
+        { id: "heat_of_fusion", title: "Phase Change: Heat of Fusion", formula: "q = n · ΔHfus", targetVariable: { symbol: 'q' }, vars: [ { symbol: "q", meaning: "? kJ" }, { symbol: "n", meaning: "2.5 mol" }, { symbol: "ΔHfus", meaning: "6.02 kJ/mol" } ], blocks: [ { numerator: [{ type: "text", v: "2.5" }, { type: "chip", id: "mol#1" }], denominator: [] }, { numerator: [{ type: "text", v: "6.02" }, { type: "chip", id: "kJ#1" }], denominator: [{ type: "chip", id: "mol#2" }] } ], units: [ { id: "mol#1", label: "mol", side: "numerator" }, { id: "kJ#1", label: "kJ", side: "numerator" }, { id: "mol#2", label: "mol", side: "denominator" } ] },
+        { id: "gas_density", title: "Gas Density: d = PM/RT", formula: "d = PM / RT", targetVariable: { symbol: 'd' }, vars: [ { symbol: "d", meaning: "? g/L" }, { symbol: "P", meaning: "1.2 atm" }, { symbol: "M", meaning: "28.0 g/mol (N₂)" }, { symbol: "R", meaning: "0.08206 L·atm/mol·K" }, { symbol: "T", meaning: "298 K" } ], blocks: [ { numerator: [{ type: "text", v: "1.2" }, { type: "chip", id: "atm#1" }], denominator: [] }, { numerator: [{ type: "text", v: "28.0" }, { type: "chip", id: "g#1" }], denominator: [{ type: "chip", id: "mol#1" }] }, { numerator: [{ type: "chip", id: "mol#2" }, { type: "chip", id: "K#1" }], denominator: [{ type: "text", v: "0.08206" }, { type: "chip", id: "L#1" }, { type: "chip", id: "atm#2" }] }, { numerator: [], denominator: [{ type: "text", v: "298" }, { type: "chip", id: "K#2" }] } ], units: [ { id: "atm#1", label: "atm", side: "numerator" }, { id: "g#1", label: "g", side: "numerator" }, { id: "mol#1", label: "mol", side: "denominator" }, { id: "mol#2", label: "mol", side: "numerator" }, { id: "K#1", label: "K", side: "numerator" }, { id: "L#1", label: "L", side: "denominator" }, { id: "atm#2", label: "atm", side: "denominator" }, { id: "K#2", label: "K", side: "denominator" } ] }
+      ];
+    }
+
+    function init() {
+      try {
+        state.problems = buildProblems();
+        loadSettings();
+        
+        if (localStorage.getItem('darkMode') === 'true' || 
+            (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        }
+        
+        document.getElementById("clearZoneBtn").addEventListener("click", clearSelection);
+        document.getElementById("resetBtn").addEventListener("click", () => loadProblem(state.problems[state.currentIndex]));
+        document.getElementById("nextBtn").addEventListener("click", () => {
+          state.currentIndex = (state.currentIndex + 1) % state.problems.length;
+          loadProblem(state.problems[state.currentIndex]);
+        });
+        
+        document.getElementById("darkToggle").addEventListener("click", () => {
+          document.documentElement.classList.toggle("dark");
+          localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+        });
+        
+        const modal = document.getElementById("settingsModal");
+        document.getElementById("settingsBtn").addEventListener("click", () => modal.showModal());
+        document.getElementById("closeSettingsBtn").addEventListener("click", () => modal.close());
+        
+        document.getElementById("soundToggle").addEventListener("change", e => {
+          state.settings.sound = e.target.checked;
+          saveSettings();
+        });
+        document.getElementById("animToggle").addEventListener("change", e => {
+          state.settings.animations = e.target.checked;
+          saveSettings();
+        });
+        document.getElementById("tutorialToggle").addEventListener("change", e => {
+          state.settings.showTutorial = e.target.checked;
+          saveSettings();
+        });
+        
+        document.addEventListener("keydown", e => {
+          if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
+          if (e.key.toLowerCase() === 'r') document.getElementById("resetBtn").click();
+          if (e.key.toLowerCase() === 'n') document.getElementById("nextBtn").click();
+          if (e.key === 'Escape') clearSelection();
+        });
+        
+        loadProblem(state.problems[state.currentIndex]);
+        
+      } catch (err) {
+        console.error("Init failed:", err);
+        document.body.innerHTML = `<div class="p-8 text-center"><i class="fas fa-exclamation-triangle text-4xl text-red-500 mb-4"></i><p class="text-red-700">Failed to initialize. Check console for details.</p></div>`;
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", init);
+  </script>
+</body>
+</html>
