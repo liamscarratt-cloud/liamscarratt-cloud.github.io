@@ -16,15 +16,9 @@ I held an **Associate Postdoctoral** position at the University of Geneva, Switz
 
 Since 2024, I have been at UNSW College as a **Leading Education Professional (Science)**, where I lead the design, delivery, and coordination of Foundation Studies and Diploma Chemistry, overseeing lectures, tutorials, laboratory sessions, and curriculum development.
 
-Research Interests
+Teaching & Tutoring
 ------
-My doctoral research at **The University of Sydney** used Atomic Force Microscopy (AFM) to measure the lubricating properties of nanofilms of oil on smooth surfaces in contact with immiscible liquids, leading to foundational work on slip at lubricated interfaces and durable superhydrophobic coatings.
-
-At the **University of Geneva**, I used colloidal probe AFM to explore how nanoparticles structure themselves in aqueous colloidal suspensions at charged interfaces, investigating the oscillatory and double layer forces that govern these interactions.
-
-At the **University of Bristol**, I investigated whether the structuring effects of nanoparticles in colloidal suspensions could be harnessed to displace nanofilms of oil from smooth surfaces, alongside writing a review on interactions in concentrated nanoparticle suspensions and polyelectrolyte solutions.
-
-Since joining **UNSW College**, my research focus has shifted to chemistry education. My current work examines how generative AI can scaffold peer learning (Think–Pair–Chatbot–Share), the impact of video feedback on student engagement and reflection, and — as Principal Investigator — how offering students choice among AI-generated pre-lab modalities shapes their preparation, confidence, and performance in first-year chemistry laboratories.
+Teaching sits at the centre of my professional identity. At UNSW College I teach 1st Year University Chemistry, with a focus on making abstract concepts accessible and building student confidence. I am committed to evidence-based, student-centred practice — an approach that directly informs my current education research. Beyond my institutional role, I also offer private tutoring in chemistry with a focus on building scientific reasoning and research thinking in preparation for attending University; see the Teaching and Tutoring pages for more detail.
 
 Beyond Academia
 ------
