@@ -21,7 +21,7 @@ A collection of tools I have developed with the assistance of AI to support stud
 **Foundational Skills**
 
 - [Balancing Chemical Equations](https://simulationtheory.ai/04e69f46-043d-4d2d-be90-71b6904b309c){:target="_blank"} — Become familiar with how to balance chemical equations.
-- [Chemistry Unit Cancelling](https://liamscarratt-cloud.github.io/files/Dimension-analysis-lab.html){:target="_blank"}
+- [Chemistry Unit Cancelling](https://liamscarratt-cloud.github.io/teaching/Dimension-analysis-lab.html){:target="_blank"}
 - [Dilution Lab](https://simulationtheory.ai/e6fe3ca8-403c-4673-864a-20dec5f7263c){:target="_blank"} — Observe how the concentration of solutions are affected via manipulating moles and volume. 
 
 Teaching Philosophy
