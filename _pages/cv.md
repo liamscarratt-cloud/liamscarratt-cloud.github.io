@@ -9,16 +9,16 @@ redirect_from:
 
 ## Academic Qualifications
 
-**2020**: Innosuisse start-up training, EPFL Innovation Park, Lausanne, Switzerland
+**2020**: Innosuisse Start-up Training, EPFL Innovation Park, Lausanne, Switzerland
 
 **2015–2019**: PhD in Chemistry, The University of Sydney
 Thesis title: *"Wetting and Liquid Flow on Lubricant Infused Nano- and Micro-Structured Surfaces"*
 Supervisor: Professor Chiara Neto
 
-**2017**: Visiting scholar at the Max Planck Institute for Polymer Research, Mainz, Germany
+**2017**: Visiting Scholar at the Max Planck Institute for Polymer Research, Mainz, Germany
 Research Group: Professor Doris Vollmer
 
-**2016**: Inventing the Future interdisciplinary prototyping course, The University of Sydney
+**2016**: Inventing the Future Interdisciplinary Prototyping Course, The University of Sydney
 
 **2010–2014**: Bachelor of Science, Majoring in Chemistry and Physics (Chemistry Honours Class 1), The University of Sydney
 Thesis title: *"Fabrication of Robust Superhydrophobic Surfaces Through Spontaneous Wrinkling"*
