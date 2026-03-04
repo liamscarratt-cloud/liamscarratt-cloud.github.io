@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a Chemistry educator and researcher with a track record in science communication, curriculum development, and interdisciplinary collaboration. I have contributed to peer-reviewed publications, delivered conference presentations across multiple countries, and led science outreach and grant-funded projects. I am dedicated to evidence-based teaching practice and fostering student success.
+I am a chemist and educator whose work spans two interconnected fields: colloidal and surface chemistry, and chemistry education. My research career began with a focus on the physical chemistry of surfaces — using atomic force microscopy to investigate superhydrophobic coatings, lubrication and slip at nanoscale liquid interfaces, and structural forces between charged interfaces in nanoparticle suspensions. Since returning to Australia in 2024 and joining UNSW College, I have applied the same rigorous, evidence-based approach to understanding how students learn — publishing in chemistry education, leading curriculum innovation, and currently serving as Principal Investigator on a study exploring AI-generated multimodal pre-lab resources grounded in Universal Design for Learning principles.
 
 Academic Background
 ------
@@ -14,17 +14,17 @@ I completed my **PhD in Surface Chemistry** at the University of Sydney (2019), 
 
 I held an **Associate Postdoctoral** position at the University of Geneva, Switzerland (2019–2021) and a **Marie Skłodowska-Curie Postdoctoral Fellowship** at the University of Bristol, UK (2021–2023) before returning to Sydney.
 
-Since 2024, I have been at UNSW College as a **Chemistry Education Specialist**, where I lead the first-year university chemistry course as its lecturer, alongside teaching tutorials and demonstrating for laboratory classes.
+Since 2024, I have been at UNSW College as a **Leading Education Professional (Science)**, where I lead the design, delivery, and coordination of Foundation Studies and Diploma Chemistry, overseeing lectures, tutorials, laboratory sessions, and curriculum development.
 
 Research Interests
 ------
-My research began in the field of surface chemistry through my PhD at **The University of Sydney**, focusing on the use of Atomic Force Microscopy (AFM) to measure the lubricating properties of nanofilms of oil on smooth surfaces in contact with immiscible liquids.
+My doctoral research at **The University of Sydney** used Atomic Force Microscopy (AFM) to measure the lubricating properties of nanofilms of oil on smooth surfaces in contact with immiscible liquids, leading to foundational work on slip at lubricated interfaces and durable superhydrophobic coatings.
 
-During my time at the **University of Geneva**, I used AFM to explore the structuring of nanoparticles in aqueous colloidal suspensions at charged interfaces.
+At the **University of Geneva**, I used colloidal probe AFM to explore how nanoparticles structure themselves in aqueous colloidal suspensions at charged interfaces, investigating the oscillatory and double layer forces that govern these interactions.
 
-At the **University of Bristol**, I investigated whether the structuring effects of nanoparticles in aqueous colloidal suspensions could be harnessed to displace nanofilms of oil from smooth surfaces submerged in the colloidal suspension.
+At the **University of Bristol**, I investigated whether the structuring effects of nanoparticles in colloidal suspensions could be harnessed to displace nanofilms of oil from smooth surfaces, alongside writing a review on interactions in concentrated nanoparticle suspensions and polyelectrolyte solutions.
 
-Since joining **UNSW College** as a Chemistry Education Specialist, my research has shifted to the application of AI tools in chemistry education and pedagogy.
+Since joining **UNSW College**, my research focus has shifted to chemistry education. My current work examines how generative AI can scaffold peer learning (Think–Pair–Chatbot–Share), the impact of video feedback on student engagement and reflection, and — as Principal Investigator — how offering students choice among AI-generated pre-lab modalities shapes their preparation, confidence, and performance in first-year chemistry laboratories.
 
 Beyond Academia
 ------
