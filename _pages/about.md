@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a chemist and educator whose work spans two interconnected fields: colloidal and surface chemistry, and chemistry education. My research career began with a focus on the physical chemistry of surfaces — using atomic force microscopy to investigate superhydrophobic coatings, lubrication and slip at nanoscale liquid interfaces, and structural forces between charged interfaces in nanoparticle suspensions. Since returning to Australia in 2024 and joining UNSW College, I have applied the same rigorous, evidence-based approach to understanding how students learn — publishing in chemistry education, leading curriculum innovation, and currently serving as Principal Investigator on a study exploring AI-generated multimodal pre-lab resources grounded in Universal Design for Learning principles.
+I am a chemist and educator whose work spans two interconnected fields: colloidal and surface chemistry, and chemistry education. My research career began with a focus on the physical chemistry of surfaces — using atomic force microscopy to investigate superhydrophobic coatings, lubrication and slip at nanoscale liquid interfaces, and structural forces between charged interfaces in nanoparticle suspensions. Since returning to Australia in 2024 and joining UNSW College, I have applied the same rigorous, evidence-based approach to understanding how students learn — publishing in chemistry education, leading curriculum innovation, and exploring AI-generated multimodal tools use in Universal Design for Learning principles.
 
 Academic Background
 ------
