@@ -5,13 +5,13 @@ permalink: /teaching/
 author_profile: true
 ---
 
-I currently run the first-year university chemistry course at **UNSW College** as its lecturer, alongside teaching tutorials and demonstrating for laboratory classes. My teaching practice is informed by ongoing research into the use of AI tools in chemistry education and pedagogy.
+I currently run the 1st Year University Chemistry course at **UNSW College** as its lecturer, alongside teaching tutorials and demonstrating for laboratory classes. My teaching practice is informed by ongoing research into the use of AI tools in chemistry education and pedagogy.
 
 Courses
 ------
 
-**First Year University Chemistry** — UNSW College (2024–present)
-Lectures, tutorials, and laboratory demonstrations for first-year university students.
+**1st Year University Chemistry** — UNSW College (2024–present)
+Lectures, tutorials, and laboratory demonstrations.
 
 Interactive Chemistry Education Tools
 ------
