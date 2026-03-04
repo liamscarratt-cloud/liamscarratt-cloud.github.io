@@ -20,7 +20,7 @@ author_profile: true
 
 ### Enhancing Student Learning Through Video Feedback and Structured Reflection
 **Murphy, T., Scarratt, L., Black, J., Naeyaert, P., & Matovu, H.** (2025)  
-*Proceedings of The Australian Conference on Science and Mathematics Education (ASCILITE 2024)*.
+*Proceedings of The Australian Conference on Science and Mathematics Education 2025*.
 
 **Abstract:** This study examines student perceptions of video feedback compared to written feedback in relation to relevance, clarity, helpfulness, and emotional response. Students who received video feedback reported significantly higher levels of positive emotion after viewing the feedback compared to those who received written feedback. Higher ratings for relevance, clarity, and helpfulness indicate that students may find video feedback more accessible and actionable. The findings have practical implications for educators seeking to enhance the overall feedback experience for students in science and mathematics education.
 
