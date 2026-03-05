@@ -20,9 +20,9 @@ A collection of tools I have developed with the assistance of AI to support stud
 
 **Foundational Skills**
 
-- [Balancing Chemical Equations](https://liamscarratt-cloud.github.io/teaching/ChemBalance.html){:target="_blank"} — Become familiar with how to balance chemical equations.
+- [Balancing Chemical Equations](https://liamscarratt-cloud.github.io/teaching/ChemBalance.html){:target="_blank"} - Become familiar with how to balance chemical equations.
 - [Chemistry Unit Cancelling](https://liamscarratt-cloud.github.io/teaching/Dimension-analysis-lab.html){:target="_blank"} - Practice unit analysis to simplify equations.
-- [Dilution Lab](https://liamscarratt-cloud.github.io/teaching/ChemSolutions/){:target="_blank"} — Observe how the concentration of solutions are affected via manipulating moles and volume. 
+- [Dilution Lab](https://liamscarratt-cloud.github.io/teaching/ChemSolutions/){:target="_blank"} - Observe how the concentration of solutions are affected via manipulating moles and volume. 
 
 Teaching Philosophy
 ------
