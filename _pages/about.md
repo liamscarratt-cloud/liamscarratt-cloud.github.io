@@ -18,7 +18,7 @@ Since 2024, I have been at UNSW College as a **Leading Education Professional (S
 
 Teaching & Tutoring
 ------
-Teaching sits at the centre of my professional identity. At UNSW College I focus on making abstract concepts accessible and building student confidence. I am committed to evidence-based, student-centred practice, an approach that directly informs my current education research. Beyond my institutional role, I also offer private tutoring in chemistry with a focus on building scientific reasoning and research skills in preparation for attending university; [click here](https://liamscarratt-cloud.github.io/teaching/#private-tutoring) for more details.
+Teaching sits at the centre of my professional identity. At UNSW College I focus on making abstract concepts accessible and building student confidence. I am committed to evidence-based, student-centred practice, an approach that directly informs my current education research. Beyond my institutional role, **I also offer private tutoring in HSC and IB Chemistry** with a focus on building scientific reasoning and research skills in preparation for attending university; [click here](https://liamscarratt-cloud.github.io/teaching/#private-tutoring) for more details.
 
 Beyond Academia
 ------
