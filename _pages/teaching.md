@@ -74,6 +74,6 @@ For **Science Extension**, I bring direct research experience across a PhD and t
 **Location:** In-person sessions available in the **Dulwich Hill / Inner West Sydney** area.
 Online sessions available via video call.
 
-I take on a small number of students each term. To enquire about availability and rates, please [get in touch](liamscarratt@gmail.com).
+I take on a small number of students each term. To enquire about availability and rates, please [get in touch](mailto:liamscarratt@gmail.com).
 
 
