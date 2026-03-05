@@ -22,7 +22,7 @@ A collection of tools I have developed with the assistance of AI to support stud
 
 - [Balancing Chemical Equations](https://liamscarratt-cloud.github.io/teaching/ChemBalance.html){:target="_blank"} — Become familiar with how to balance chemical equations.
 - [Chemistry Unit Cancelling](https://liamscarratt-cloud.github.io/teaching/Dimension-analysis-lab.html){:target="_blank"} - Practice unit analysis to simplify equations.
-- [Dilution Lab](https://simulationtheory.ai/e6fe3ca8-403c-4673-864a-20dec5f7263c){:target="_blank"} — Observe how the concentration of solutions are affected via manipulating moles and volume. 
+- [Dilution Lab](https://liamscarratt-cloud.github.io/teaching/ChemSolutions.html){:target="_blank"} — Observe how the concentration of solutions are affected via manipulating moles and volume. 
 
 Teaching Philosophy
 ------
