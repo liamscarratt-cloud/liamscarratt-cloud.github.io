@@ -15,7 +15,7 @@ Courses
 - Chemical bonding (*Lewis structures, VSEPR, valence bond theory, σ/π bonds, hybridisation, and MO diagrams for homonuclear diatomics*)
 - Intermolecular forces and states of matter (*polarity, dispersion, hydrogen bonding, the ideal gas law, Dalton's law, and Raoult's law*)
 - Chemical equilibria (*equilibrium constants, ICE tables, Le Chatelier's principle, and the van 't Hoff equation*)
-- Acids and bases (*Brønsted-Lowry and Lewis definitions, pH calculations, buffer systems, and the Henderson–Hasselbalch equation*)
+- Acids and bases (*Brønsted-Lowry and Lewis definitions, pH calculations, buffer systems, and the Henderson-Hasselbalch equation*)
 - Thermochemistry (*first and second laws of thermodynamics, enthalpy, entropy, Gibbs energy, Hess's law, and the relationship between ΔG° and K*)
 - Electrochemistry (*redox chemistry, galvanic and electrolytic cells, standard reduction potentials, the Nernst equation, and applications including corrosion and electrolysis*) 
 
