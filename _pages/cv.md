@@ -30,7 +30,7 @@ Supervisors: Professor Chiara Neto, Associate Professor Brian Hawkett
 **2024–present**: Leading Education Professional, University of New South Wales College, Australia
 
 
-Coordinated and delivered Foundation Studies and 1st Year Chemistry courses across multiple formats while managing academic staff and organisational partnerships for seamless program implementation. Led comprehensive curriculum redesign of Foundation Studies Chemistry, enhancing lecture materials and laboratory instructions as part of the 2025 curriculum review team. Pioneered interdisciplinary collaboration between Chemistry and English departments to improve teaching practice and curriculum design, incorporating AI tools to maximize student engagement. Trained staff in educational technologies, while actively disseminating pedagogical insights to enhance student learning outcomes. Presented research on science communication at Academic Collaboration and Innovation (ACI) Day and contributed to cross-departmental initiatives as the ACI Fellow for the Science Department.
+Coordinated and delivered Foundation Studies and Diploma Chemistry (first-year university level) across multiple formats while managing academic staff and organisational partnerships for seamless program implementation. Led comprehensive curriculum redesign of Foundation Studies Chemistry, enhancing lecture materials and laboratory instructions as part of the 2025 curriculum review team. Pioneered interdisciplinary collaboration between Chemistry and English departments to improve teaching practice and curriculum design, incorporating AI tools to maximize student engagement. Trained staff in educational technologies, while actively disseminating pedagogical insights to enhance student learning outcomes. Presented research on science communication at Academic Collaboration and Innovation (ACI) Day and contributed to cross-departmental initiatives as the ACI Fellow for the Science Department.
 
 **2021–2023**: Marie Skłodowska-Curie Postdoctoral Fellow, University of Bristol, UK
 
@@ -40,11 +40,11 @@ Independent pursuit of collaborations and propagation of proposed research proje
 **2019–2021**: Postdoctoral Research Associate, Université de Genève, Switzerland
 
 
-Undertaking research as part of a cohesive international team with tight deadlines within a different research area to my PhD. Responsible for 1st year Chemistry laboratory teaching. Performing assigned laboratory session ahead of time to validate viability, creating an accompanying report and attending meetings with course designers/instructors. Guiding students during 4 hour lab sessions. Marking student performance during labs, and their reports after the session concluded.
+Undertaking research as part of a cohesive international team with tight deadlines within a different research area to my PhD. Responsible for first-year chemistry laboratory teaching. Performing assigned laboratory session ahead of time to validate viability, creating an accompanying report and attending meetings with course designers/instructors. Guiding students during 4 hour lab sessions. Marking student performance during labs, and their reports after the session concluded.
 
 **2014–2018**: Lab Demonstrator and Teaching Fellow, The University of Sydney, Australia
 
-Chemistry Lab Demonstrator for 1st Year Standard and Special Studies Program, and 3rd Year, and Postgraduate Teaching Fellow for 1st Year Chemistry
+Chemistry Lab Demonstrator for First-year Standard and Special Studies Program, and Third Year, and Postgraduate Teaching Fellow for First-year Chemistry
 Instructing groups of students during a 3–4 hour lab session, demonstrating safe lab practice, scientific research methodology, data analysis skills, and marking reports providing constructive feedback. Teaching 1-hour tutorials, liaising with lecturers to prepare lesson content and marking exam papers. Encouraging peer to peer communication and discussion of concepts with a focus on self-directed learning whilst testing student understanding to maintain engagement. Time distributed evenly between students during class, with additional assistance via responding to student questions online.
 
 **2012–2014**: Regulatory Scientist, NSW Government National Industrial Chemicals Notification and Assessment Scheme
