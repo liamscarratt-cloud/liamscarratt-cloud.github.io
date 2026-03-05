@@ -53,4 +53,25 @@ One of the key challenges that all students will face when learning complex topi
 - [Chemistry Unit Cancelling](https://liamscarratt-cloud.github.io/teaching/Dimension-analysis-lab.html){:target="_blank"}: Practice dimensional analysis to verify and manipulate physical equations. In science, we use mathematical equations to represent physical phenomena. It is important to understand that variables in equations have physical dimensions, known as units, and that when doing maths with these equations we need our units to cancel into the correct unit for the variable we want to measure.
 - [Dilution Lab](https://liamscarratt-cloud.github.io/teaching/ChemSolutions/){:target="_blank"}: Observe how the concentration of solutions is affected by manipulating moles and volume. In chemistry we use solutions, which are essentially a quantity of molecules or ions dissolved in a certain volume of liquid. The ratio of the amount (in moles) to the volume of the liquid is called the concentration, often expressed as mol/L.
 
+Private Tutoring
+------
+
+I offer private tutoring in **high school chemistry and science** for students in the **Sydney, NSW** area, as well as online sessions for students across Australia or internationally. My background as a university lecturer and research scientist gives me a clear picture of exactly what skills and conceptual depth students need to succeed in tertiary science, and I use that to help high school students build those foundations early.
+
+**Courses I tutor:**
+
+- HSC Chemistry
+- HSC Science Extension (science research project, methodology, and scientific writing)
+- IB Chemistry (SL & HL)
+- General chemistry exam preparation and study skills
+
+**My approach** draws on research-informed pedagogy, with a focus on building the connections between macroscopic, submicroscopic, and symbolic representations that are particularly relevant for HSC Band 6 and IB 7 preparation.
+
+For **Science Extension**, I bring direct research experience across a PhD and two international postdoctoral appointments. I can help students develop strong research questions, design rigorous experiments, analyse data, and write with clarity and precision.
+
+**Location:** In-person sessions available in the **Dulwich Hill / Inner West Sydney** area.
+Online sessions available via video call.
+
+I take on a small number of students each term. To enquire about availability and rates, please [get in touch](liamscarratt@gmail.com).
+
 
