@@ -5,6 +5,12 @@ permalink: /teaching/
 author_profile: true
 ---
 
+<style>
+  ul li, ol li {
+    text-align: justify;
+  }
+</style>
+
 I currently run the first-year university chemistry courses at **UNSW College** as its lecturer, alongside teaching tutorials and demonstrating for laboratory classes. My teaching practice is informed by my ongoing research into chemistry education and pedagogy, alongside interdisciplinary collaborations with my colleagues at UNSW College.
 
 UNSW College Courses
