@@ -58,7 +58,7 @@ One of the key challenges that all students will face when learning complex topi
 Private Tutoring
 ------
 
-I offer private tutoring in **high school chemistry and science** for students in the **Sydney, NSW** area, as well as online sessions for students across Australia or internationally. My background as a university lecturer and research scientist gives me a clear picture of exactly what skills and conceptual depth students need to succeed in tertiary science, and I use that to help high school students build those foundations early.
+I offer private tutoring in **high school chemistry and science** for students in the **Sydney, NSW** area, as well as online sessions for students across Australia. My background as a university lecturer and research scientist gives me a clear picture of exactly what skills and conceptual depth students need to succeed in tertiary science, and I use that to help high school students build those foundations early.
 
 **Courses I tutor:**
 
