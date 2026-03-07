@@ -17,20 +17,22 @@ A full record of my academic qualifications, employment history, awards, and con
 
 ## Academic Qualifications
 
-**2020**: Innosuisse Start-up Training, EPFL Innovation Park, Lausanne, Switzerland
-
 **2015–2019**: PhD in Chemistry, The University of Sydney
 Thesis title: *"Wetting and Liquid Flow on Lubricant Infused Nano- and Micro-Structured Surfaces"*
 Supervisor: Professor Chiara Neto
 
-**2017**: Visiting Scholar at the Max Planck Institute for Polymer Research, Mainz, Germany
-Research Group: Professor Doris Vollmer
-
-**2016**: Inventing the Future Interdisciplinary Prototyping Course, The University of Sydney
+- Visiting Scholar at the Max Planck Institute for Polymer Research, Mainz, Germany
+Research Group: Professor Doris Vollmer during 2017 and 2018
 
 **2010–2014**: Bachelor of Science, Majoring in Chemistry and Physics (Chemistry Honours Class 1), The University of Sydney
 Thesis title: *"Fabrication of Robust Superhydrophobic Surfaces Through Spontaneous Wrinkling"*
 Supervisors: Professor Chiara Neto, Associate Professor Brian Hawkett
+
+## Professional Development
+
+**2020**: Innosuisse Start-up Training, EPFL Innovation Park, Lausanne, Switzerland
+
+**2016**: Inventing the Future Interdisciplinary Prototyping Course, The University of Sydney
 
 ## Employment
 
@@ -101,23 +103,23 @@ Organising multiple aspects of the conference, in particular liaising with commi
 
 ## Academic Conference Presentations
 
-- Proceedings of The Australian Conference on Science and Mathematics Education, Melbourne, Australia, 2025.09 (**Oral presentation**)
-- Seminar at Department of Theoretical Physics at Jožef Stefan Institute, Ljubljana, Slovenia, 2023.09 (**Invited talk**)
-- 9th Bubbles & Droplets Conference, Lublin, Poland, 2023.06 (**Oral presentation**)
-- Postgraduate Research Associate Seminar, University of Bristol, UK, 2022.10 (**Invited talk**)
-- 17th Conference of the International Association of Colloid and Interface Scientists, Brisbane, Australia, 2022.06 (**Oral presentation**)
-- Peter Tims Symposium, University of Bristol, UK, 2022.05 (**Invited poster presentation**)
-- University of Geneva Postdoctoral Association Postdoc Day, Geneva, Switzerland, 2021.05 (**Oral presentation**)
-- The Australian Colloid and Interface Symposium, Sydney, NSW, Australia, 2021.02 (**Oral presentation – online**)
-- 33rd Conference of the European Colloid and Interface Society, Leuven, Belgium, 2019.09 (**Oral presentation**)
-- University of Geneva Postdoctoral Association Postdoc Day, Geneva, Switzerland, 2019.06 (**Oral presentation**)
-- Le Fèvre Student Lecture, The University of Sydney, NSW, Australia 2018.08 (**Invited talk**)
-- 16th Conference of the International Association of Colloid and Interface Scientists, Rotterdam, Netherlands, 2018.05 (**Oral presentation**)
-- 31st Australasian Colloid and Interface Society Student Conference, Warrnambool, VIC, Australia, 2018.01 (**Oral presentation**)
-- Department Seminar at Max Planck Institute for Polymer Research, Mainz, Germany, 2017.11 (**Invited talk**)
-- Sydney Surfaces and Soft Stuff meeting, University of New South Wales, NSW, Australia, 2017.06 (**Oral presentation**)
-- 8th Australian Colloid and Interface Symposium, Coffs Harbour, NSW, Australia, 2017.02 (**Poster presentation**)
-- RACI Chem Ed and AIP Nanoscience event, The University of Sydney, NSW, Australia 2016.06 (**Invited talk**)
-- Sydney Surfaces and Soft Stuff meeting, University of New South Wales, NSW, Australia, 2016.06 (**Oral presentation**)
-- 30th Australasian Colloid and Interface Society Student Conference, Kioloa, NSW, Australia, 2016.02 (**Poster presentation**)
-- 7th Australian Colloid and Interface Symposium, Hobart, TAS, Australia, 2015.02 (**Poster presentation**)
+- Proceedings of The Australian Conference on Science and Mathematics Education, Melbourne, Australia, Sep 2025 (**Oral presentation**)
+- Seminar at Department of Theoretical Physics at Jožef Stefan Institute, Ljubljana, Slovenia, Sep 2023 (**Invited talk**)
+- 9th Bubbles & Droplets Conference, Lublin, Poland, Jun 2023 (**Oral presentation**)
+- Postgraduate Research Associate Seminar, University of Bristol, UK, Oct 2022 (**Invited talk**)
+- 17th Conference of the International Association of Colloid and Interface Scientists, Brisbane, Australia, Jun 2022 (**Oral presentation**)
+- Peter Tims Symposium, University of Bristol, UK, May 2022 (**Invited poster presentation**)
+- University of Geneva Postdoctoral Association Postdoc Day, Geneva, Switzerland, May 2021 (**Oral presentation**)
+- The Australian Colloid and Interface Symposium, Sydney, NSW, Australia, Feb 2021 (**Oral presentation – online**)
+- 33rd Conference of the European Colloid and Interface Society, Leuven, Belgium, Sep 2019 (**Oral presentation**)
+- University of Geneva Postdoctoral Association Postdoc Day, Geneva, Switzerland, Jun 2019 (**Oral presentation**)
+- Le Fèvre Student Lecture, The University of Sydney, NSW, Australia Aug 2018 (**Invited talk**)
+- 16th Conference of the International Association of Colloid and Interface Scientists, Rotterdam, Netherlands, May 2018 (**Oral presentation**)
+- 31st Australasian Colloid and Interface Society Student Conference, Warrnambool, VIC, Australia, Jan 2018 (**Oral presentation**)
+- Department Seminar at Max Planck Institute for Polymer Research, Mainz, Germany, Nov 2017 (**Invited talk**)
+- Sydney Surfaces and Soft Stuff meeting, University of New South Wales, NSW, Australia, Jun 2017 (**Oral presentation**)
+- 8th Australian Colloid and Interface Symposium, Coffs Harbour, NSW, Australia, Feb 2017 (**Poster presentation**)
+- RACI Chem Ed and AIP Nanoscience event, The University of Sydney, NSW, Australia Jun 2016 (**Invited talk**)
+- Sydney Surfaces and Soft Stuff meeting, University of New South Wales, NSW, Australia, Jun 2016 (**Oral presentation**)
+- 30th Australasian Colloid and Interface Society Student Conference, Kioloa, NSW, Australia, Feb 2016 (**Poster presentation**)
+- 7th Australian Colloid and Interface Symposium, Hobart, TAS, Australia, Feb 2015 (**Poster presentation**)
