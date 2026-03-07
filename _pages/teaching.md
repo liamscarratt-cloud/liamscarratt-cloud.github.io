@@ -68,7 +68,7 @@ One of the key challenges that all students will face when learning complex topi
 Private Tutoring
 ------
 
-I offer private tutoring in **high school chemistry and science** for students in the **Sydney, NSW** area, as well as online sessions for students across Australia. My background as a university lecturer and research scientist gives me a clear picture of exactly what skills and conceptual depth students need to succeed in tertiary science, and I use that to help high school students build those foundations early.
+I offer private tutoring in **high school chemistry and science** for students in the **Sydney, NSW area**, as well as online sessions for students across Australia. My background as a university lecturer and research scientist gives me a clear picture of exactly what skills and conceptual depth students need to succeed in tertiary science, and I use that to help high school students build those foundations early.
 
 **Courses I tutor:**
 
@@ -84,6 +84,10 @@ For **Science Extension**, I bring direct research experience across a PhD and t
 **Location:** In-person sessions available in the **Dulwich Hill / Inner West Sydney** area.
 Online sessions available via video call.
 
-I take on a small number of students each term. To enquire about availability and rates, please [get in touch](mailto:liamscarratt@gmail.com).
+**Investment & Next Steps:**
+My private tutoring rate is $150 per hour for HSC and IB Chemistry.
+(*Note: Mentoring for HSC Science Extension research projects is highly specialised, please enquire for specific rates*).
 
+I take on a small number of students each term to ensure I can provide dedicated, high-quality support. To make sure my teaching style is the right fit for your child's goals, I offer a complimentary 15-minute phone or video consultation. We can discuss their current progress, where they are getting stuck, and how we can build their confidence.
 
+To check availability or schedule a quick chat, please [get in touch](mailto:liamscarratt@gmail.com).
