@@ -18,8 +18,8 @@ Since 2024, I have been at UNSW College as a **Leading Education Professional (S
 
 Teaching & Tutoring
 ------
-Teaching sits at the centre of my professional identity. At UNSW College I focus on making abstract concepts accessible and building student confidence. I am committed to evidence-based, student-centred practice, an approach that directly informs my current education research. Beyond my institutional role, **I also offer private tutoring in HSC and IB Chemistry** with a focus on building scientific reasoning and research skills in preparation for attending university; [click here](https://liamscarratt-cloud.github.io/teaching/#private-tutoring) for more details, or enquire directly at via [email](mailto:liamscarratt@gmail.com).
+At UNSW College I focus on making abstract concepts accessible and building student confidence. I am committed to evidence-based, student-centred practice, an approach that directly informs my current education research. Beyond my institutional role, **I also offer private tutoring in HSC and IB Chemistry** with a focus on building scientific reasoning and research skills in preparation for attending university; [click here](https://liamscarratt-cloud.github.io/teaching/#private-tutoring) for more details, or enquire directly at via [email](mailto:liamscarratt@gmail.com).
 
-Beyond Academia
+Creative Practice and Community
 ------
 Outside of teaching and research, I enjoy working on absurdist comedy and music projects, and doing outreach at the intersection of Art and Science. Collaborations I have been involved in include writing and performing alongside [**BEAK Comedy**](https://linktr.ee/beakcomedy){:target="_blank"} (Sydney), singing tenor and bass with the jazz a cappella group **The Acappelicans** (Sydney), and helping organise and run [**SciFilmIt Hackathon**](https://scifilmit.com/){:target="_blank"} events (Geneva, Bristol).
