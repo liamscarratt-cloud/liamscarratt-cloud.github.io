@@ -56,7 +56,7 @@ That experience profoundly shaped how I think about teaching.
 My teaching practice is built around actively making the connections between the macroscopic, submicroscopic, and symbolic visible and explicit for students, rather than assuming those connections will form on their own. I draw on inquiry-based principles to encourage curiosity, ask questions that cut across the three domains, and focus on reinforcing the key fundamental ideas that give students the confidence to engage with more complex material.
 
 This philosophy directly informs my research in Chemistry Education, where I investigate how evidence-based pedagogy and generative AI tools can support student preparation, engagement, and conceptual understanding. You can read more on the 
-[Research](/publications/) page.
+[Research](https://liamscarratt-cloud.github.io/publications) page.
 
 Interactive Chemistry Education Tools
 ------
