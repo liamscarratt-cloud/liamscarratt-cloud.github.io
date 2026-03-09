@@ -1,11 +1,13 @@
 ---
-title: "About"
+title: "Liam Scarratt | Chemistry Educator & Researcher"
 permalink: /
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+description: "Sydney-based chemistry educator and researcher, teaching first-year university chemistry and developing AI-enhanced chemistry education tools."
 ---
+
 I am a chemist and educator with over a decade of experience spanning academic research, international postdoctoral positions, and university teaching. My career has taken me from the nanoscale physics of surfaces, investigating lubrication, wettability, and colloidal forces using atomic force microscopy, to the classroom, where I now teach first-year university chemistry at UNSW College and pursue research in Chemistry Education. I am particularly interested in how evidence-based pedagogy and generative AI tools can be harnessed to improve student preparation, engagement, and conceptual understanding. 
 
 Academic Background
