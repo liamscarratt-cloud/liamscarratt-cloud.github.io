@@ -1,10 +1,11 @@
 ---
 layout: single
-title: "Curriculum Vitae"
+title: "Curriculum Vitae: Dr Liam R. J. Scarratt"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+description: "Academic CV of Dr Liam R. J. Scarratt: Chemistry educator and researcher at UNSW College, Sydney."
 ---
 
 A full record of my academic qualifications, employment history, awards, and conference presentations.
