@@ -1,8 +1,9 @@
 ---
 layout: single
-title: "Research"
+title: "Research Publications"
 permalink: /publications/
 author_profile: true
+description: "Peer-reviewed publications in surface chemistry, wettability, lubrication, atomic force microscopy, and chemistry education research by Dr Liam R. J. Scarratt."
 ---
 
 My research spans two fields: Colloidal and Surface Chemistry, and Chemistry Education. My earlier work focused on the physical chemistry of surfaces, developing durable superhydrophobic coatings, investigating lubrication and slip at nanoscale liquid interfaces using Atomic Force Microscopy (AFM), and probing the structural forces that govern interactions between charged interfaces in nanoparticle suspensions and polyelectrolyte solutions. These investigations were carried out during my PhD at the University of Sydney and subsequent postdoctoral positions at the University of Geneva and the University of Bristol. 
