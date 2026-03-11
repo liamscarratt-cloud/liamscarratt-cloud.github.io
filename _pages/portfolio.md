@@ -6,7 +6,7 @@ author_profile: true
 description: "Creative and technical projects by Dr Liam R. J. Scarratt, including music, absurdist comedy, and science outreach."
 ---
 
-Alongside my work in chemistry and education, I have a long-standing involvement in music, comedy, and performance. Below is a record of projects, productions, and performances I have been part of."
+Alongside my work in chemistry and education, I have a long-standing involvement in music, comedy, and performance. Below is a record of projects, productions, and performances I have been part of.
 
 ## Comedy and Theatre
 
