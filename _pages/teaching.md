@@ -91,4 +91,18 @@ My private tutoring rate is $150 per hour for HSC and IB Chemistry.
 
 I take on a small number of students each term to ensure I can provide dedicated, high-quality support. To make sure my teaching style is the right fit for your child's goals, I offer a complimentary 15-minute phone or video consultation. We can discuss their current progress, where they are getting stuck, and how we can build their confidence.
 
+---
+
+**What my university students say:**
+
+> *"Liam is a very kind and professional teacher. He always encourages me no matter whether I answer a question right or wrong - he makes me want to keep studying chemistry."*
+
+> *"Liam always helped me when I didn’t know how to start a question. He was patient and encouraged me to ask questions. Even though chemistry was not my strongest subject, I could understand the topics through his explanations - he explains things in really great detail.”*
+
+> *"The relaxed atmosphere made it easier to ask questions and stay motivated, and I found myself improving much faster than I expected."*
+
+> *"Liam is the best part of this course, with passion and knowledge."*
+
+---
+
 To check availability or schedule a quick chat, please [get in touch](mailto:liamscarratt@gmail.com).
