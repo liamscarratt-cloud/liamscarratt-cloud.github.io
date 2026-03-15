@@ -56,7 +56,14 @@ gallery:
     image_path: gallery/BEAK_Sydney_2018.jpg
     alt: "Poster, BEAK Comedy, Sydney, 2018"
     title: "Poster, BEAK Comedy, Sydney, 2018"
-   
+  - url: gallery/SciFilmIt_Bristol_2023.JPG
+    image_path: gallery/SciFilmIt_Bristol_2023.JPG
+    alt: "SciFilmIt, Bristol, 2023"
+    title: "SciFilmIt, Bristol, 2023"
+   - url: gallery/Interview_Bristol_2023.jpg
+    image_path: gallery/Interview_Bristol_2023.jpg
+    alt: "Interview, Bristol, 2023"
+    title: "Interview, Bristol, 2023"
 ---
 
 {% include gallery %}
