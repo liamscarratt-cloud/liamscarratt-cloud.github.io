@@ -18,6 +18,10 @@ url                      : "https://liamscarratt-cloud.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "liamscarratt-cloud/liamscarratt-cloud.github.io"
 
+exclude:
+  - "googlec7e820a24d545367.html"
+  - "files/Liam RJ Scarratt_CV 2026.pdf"
+
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
