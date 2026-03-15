@@ -36,6 +36,8 @@ Alongside my work in chemistry and education, I have a long-standing involvement
 
 2019: **YouTube multi-instrument cover** — *Let Down* by Radiohead — [watch here](https://youtu.be/2r14R6Ng4YM?si=aiysM54UKpGhrSqp){:target="_blank"} 
 
+2017: **Guitarist and Backup Vocals with Senyadee cover** - *Kate* by Ben Folds - [watch here](https://www.youtube.com/watch?v=E9mxOF3VKt4&list=RDE9mxOF3VKt4&start_radio=1){:target="_blank"} 
+
 2016: **Guitarist** for *Musical of Thrones*, Sydney Production, NSW
 
 2014–2018: **Bass and Tenor** with *The Acappelicans* — Vocal Australia A Cappella University Division Finals, Melbourne (2015); sponsored promotional tour of Hong Kong (2014); Sydney Fringe (2013, 2015, 2018). Recorded three studio albums, one available on [Spotify](https://open.spotify.com/artist/5mhDhVgVlgQBKAwx5yqYjC?si=9WhCndP4TlOswGm8o3m8Bg){:target="_blank"} — [YouTube channel](https://youtube.com/@Acappelicans?si=imBleP9N6IHAHOi0){:target="_blank"} 
