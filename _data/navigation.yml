@@ -22,6 +22,9 @@ main:
 
   - title: "Curriculum Vitae"
     url: /cv/
+
+  - title: "Gallery"
+    url: /gallery/
     
   # - title: "Tutoring"
     # url: /tutoring/
