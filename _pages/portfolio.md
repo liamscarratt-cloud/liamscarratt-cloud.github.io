@@ -48,7 +48,7 @@ Alongside my work in chemistry and education, I have a long-standing involvement
 
 2012: **Guitarist** in Jazz version of Gilbert and Sullivan's *Patience*, The University of Sydney Musical Society, NSW
 
-2011: **Lead singer and guitarist** in Alt Rock band *Thayne*, NSW
+2011: **Lead singer and guitarist** in Alt Rock band *Thayne*, NSW. Here's a video of us performing a cover - [watch here](https://www.youtube.com/watch?v=GLpAaB2fg8M&list=RDGLpAaB2fg8M&start_radio=1){:target="_blank"} 
 
 2007–2010: **Lead singer and guitarist** in Alt Rock band *Mind Priorities*, NSW
 
