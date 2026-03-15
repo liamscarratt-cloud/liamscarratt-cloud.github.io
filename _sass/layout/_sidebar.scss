@@ -2,8 +2,7 @@
    SIDEBAR
    ========================================================================== */
 
-/*
-   Default
+/* Default
    ========================================================================== */
 
 .sidebar {
@@ -19,7 +18,7 @@
 
   @media screen and (min-width: $sidebar-screen-min-width) {
     height: 100vh;
-    overflow-y: auto;               // Add scrollbar if the sidebar is too long
+    overflow-y: auto;              // Add scrollbar if the sidebar is too long
     position: fixed;
     padding-top: $masthead-height;
   }
@@ -76,9 +75,7 @@
   }
 }
 
-
-/*
-   Table of contents
+/* Table of contents
    ========================================================================== */
 
 .toc {
@@ -136,8 +133,7 @@
   }
 }
 
-/*
-   Author profile and links
+/* Author profile and links
    ========================================================================== */
 
 .author__avatar {
@@ -157,14 +153,8 @@
     max-width: 175px;
     border-radius: 50%;
   }
-    @include breakpoint($large) {
-      padding: 3px; // matches your link colour
-      border: 3px solid #2a6496; // matches your link colour
-    }
-  }
 }
-      
-    
+
 .author__content {
   display: table-cell;
   vertical-align: top;
@@ -188,6 +178,7 @@
     margin-bottom: 10px;
   }
 }
+
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
@@ -195,6 +186,7 @@
 
 .sidebar .author__desktop {
   display: none;
+
   @media screen and (min-width: 1024px) {
     display: block;
   }
