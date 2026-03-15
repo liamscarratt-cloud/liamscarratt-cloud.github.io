@@ -89,3 +89,10 @@
 .author__name {
   font-size: 1.1em;
 }
+
+/* Body text size — slightly smaller than default, headings unaffected */
+.page__content p,
+.page__content li,
+.page__content td {
+  font-size: 0.9em;
+}
