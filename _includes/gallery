@@ -24,6 +24,7 @@
           "{{ img.url | prepend: "/images/" | prepend: base_path }}"
         {% endif %}
         {% if img.title %}title="{{ img.title }}"{% endif %}
+  class="image-popup"
       >
         <img src=
           {% if img.image_path contains "://" %}
