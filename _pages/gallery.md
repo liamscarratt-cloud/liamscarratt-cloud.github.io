@@ -48,7 +48,7 @@ gallery:
     image_path: gallery/LUTTE_Geneva_2020.png
     alt: "Poster, LUTTE, Geneva, 2020"
     title: "Poster, LUTTE, Geneva, 2020"
-  - url: gallery/BEAK Comedy_Sydney_2019.jpg
+  - url: gallery/BEAK_Comedy_Sydney_2019.jpg
     image_path: gallery/BEAK_Comedy_Sydney_2019.jpg
     alt: "Performance, BEAK Comedy, Sydney, 2019"
     title: "Performance, BEAK Comedy, Sydney, 2019"
@@ -60,10 +60,26 @@ gallery:
     image_path: gallery/SciFilmIt_Bristol_2023.JPG
     alt: "SciFilmIt, Bristol, 2023"
     title: "SciFilmIt, Bristol, 2023"
-   - url: gallery/Interview_Bristol_2023.jpg
+  - url: gallery/Interview_Bristol_2023.jpg
     image_path: gallery/Interview_Bristol_2023.jpg
     alt: "Interview, Bristol, 2023"
     title: "Interview, Bristol, 2023"
 ---
 
 {% include gallery %}
+
+<script>
+$(document).ready(function() {
+  $(".image-popup").magnificPopup({
+    type: "image",
+    titleSrc: "title",
+    gallery: { enabled: true },
+    callbacks: {
+      markupParse: function(template, values, item) {
+        values.title = item.el.attr("title");
+      }
+    }
+  });
+});
+</script>
+
