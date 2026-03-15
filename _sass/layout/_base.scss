@@ -265,8 +265,8 @@ figcaption {
     transition: $global-transition;
 
     &:hover {
-      color: #000;
-      border-bottom-color: #000;
+      color: 3px solid rgba(42, 100, 150, 0.3);   //new
+      border-bottom-color: 3px solid rgba(42, 100, 150, 0.3);   //new
     }
   }
 }
