@@ -58,3 +58,19 @@
 
 
 
+/* Font consistency overrides */
+.greedy-nav a,
+.greedy-nav .visible-links a,
+.greedy-nav__toggle,
+.masthead__menu-item,
+.author__name,
+.author__bio,
+.author__urls,
+.author__urls a,
+.sidebar,
+.sidebar p,
+.sidebar a,
+.nav__list,
+.nav__list a {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
