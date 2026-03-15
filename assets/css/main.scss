@@ -56,12 +56,14 @@
   }
 }
 
-.gallery__item figcaption,
-.gallery__item .archive__item-title {
-  display: block;
+.gallery-caption {
+  display: inline-block;
+  width: 100%;
   text-align: center;
-  font-size: 0.75em;
+  font-size: 0.7em;
   color: #555;
-  padding: 4px 2px 8px;
+  margin: 2px 0 10px;
+  padding: 0 4px;
 }
+
 
