@@ -56,7 +56,8 @@
   }
 }
 
-.gallery figcaption {
+.gallery__item figcaption,
+.gallery__item .archive__item-title {
   display: block;
   text-align: center;
   font-size: 0.75em;
