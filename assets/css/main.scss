@@ -5,42 +5,58 @@
  * This file controls what is imported from /_sass
  *
  * Note that the files are processed in the order they are imported, so they are partly
-    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
 @import
-      "vendor/breakpoint/breakpoint",
+    "vendor/breakpoint/breakpoint",
 
-      "themes",
-      "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-      "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
-      "include/mixins",
-      "vendor/susy/susy",
+    "include/mixins",
+    "vendor/susy/susy",
 
-      "layout/reset",
-      "layout/base",
+    "layout/reset",
+    "layout/base",
 
-      "include/utilities",
-      "layout/tables",
-      "layout/buttons",
-      "layout/notices",
-      "layout/masthead",
-      "layout/navigation",
-      "layout/footer",
-      "syntax",
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
 
-      "layout/forms",
+    "layout/forms",
 
-      "layout/page",
-      "layout/archive",
-      "layout/sidebar",
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv",
 
-      
-      
-
-      "layout/json_cv"
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands"
 ;
+/* Custom overrides */
+@media (min-width: 64em) {
+  .page__content p, .page__content li {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+
+@media (min-width: 64em) {
+  .page__inner-wrap {
+    padding-left: 2.5em;
+  }
+}
+
+
 
 /* Font consistency overrides */
 .greedy-nav a,
@@ -59,14 +75,14 @@
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-/* h3 heading size: paper/project titles larger than body text */
+/* Fix h3 heading size — paper/project titles appear larger than body text */
 .page__content h3 {
-  font-size: 1.2em;
-  margin-top: 1.4em;
+  font-size: 1.1em;
+  margin-top: 1.2em;
   margin-bottom: 0.3em;
 }
 
-/* Sidebar font size: match body text */
+/* Sidebar font size — match body text */
 .sidebar {
   font-size: 1em;
 }
@@ -74,15 +90,9 @@
   font-size: 1.1em;
 }
 
-/* Body text size: slightly smaller than default, headings unaffected */
+/* Body text size — slightly smaller than default, headings unaffected */
 .page__content p,
 .page__content li,
 .page__content td {
-  font-size: 0.95em;
-}
-
-/* Profile avatar border */
-.author__avatar img {
-  border: 3px solid #2a6496;
-  padding: 3px;
+  font-size: 0.9em;
 }
