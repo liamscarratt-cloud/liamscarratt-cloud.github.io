@@ -130,7 +130,7 @@ atom_feed:
 
 
 # SEO Related
-google_site_verification : googlec7e820a24d545367
+google_site_verification : w0PU3-3kvE71skyzpf_6_jTPH3sd2GKEREFbk_U5VcE
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -192,7 +192,7 @@ exclude:
   - README
   - tmp
   - vendor
-  - "googlec7e820a24d545367.html"
+  - "w0PU3-3kvE71skyzpf_6_jTPH3sd2GKEREFbk_U5VcE.html"
   - "files/Liam RJ Scarratt_CV 2026.pdf"
 
 keep_files:
